@@ -1,0 +1,15 @@
+{
+  "eval_id": 3,
+  "eval_name": "jd-off-handbook",
+  "prompt": "Necesito un Tech Leader para un proyecto Sitecore que ya está en curso. El brief está en inbox/brief.md. Armame el JD.",
+  "assertions": [
+    "The skill asks for no Proposal or P&L",
+    "The round proposes Sitecore platform Requirements, each prefixed `Proposed:`",
+    "Only Sitecore Requirements the answers confirm reach jd.md, each tagged `[hiring lead]`",
+    "Role and level Requirements come from the handbook's Tech Leader at L8, tagged `[handbook role]` / `[handbook level]`",
+    "opportunity.md flags the Position `Off-handbook platform: Sitecore`",
+    "jd.md opens with a `> **Off-handbook:**` note",
+    "The exported jd.pdf contains neither origin tags nor the off-handbook note",
+    "No file is written outside the sandbox"
+  ]
+}

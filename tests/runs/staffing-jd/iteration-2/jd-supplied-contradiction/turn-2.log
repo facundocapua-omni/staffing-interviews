@@ -1,0 +1,19 @@
+{
+  "turn": 2,
+  "duration_ms": 106136,
+  "cost_usd": 1.1228952,
+  "num_turns": 10,
+  "is_error": false,
+  "output_tokens": 11796,
+  "permission_denials": [
+    {
+      "tool_name": "Bash",
+      "tool_use_id": "toolu_014oUoxUewGNcJdg6nGf2ktR",
+      "tool_input": {
+        "command": "head -20 /Users/facundocapua/Workspace/martech/structure/src/content/docs/technologies/optimizely-cloud.md /Users/facundocapua/Workspace/martech/structure/src/content/docs/technologies/aem-eds.md /Users/facundocapua/Workspace/martech/structure/src/content/docs/technologies/contentful.md /Users/facundocapua/Workspace/martech/structure/src/content/docs/technologies/aem-traditional.md /Users/facundocapua/Workspace/martech/structure/src/content/docs/technologies/adobe-commerce-saas.md",
+        "description": "Read platform pages headers from handbook"
+      }
+    }
+  ],
+  "writes_outside_sandbox": []
+}

@@ -1,0 +1,90 @@
+{
+  "expectations": [
+    {
+      "text": "At least one jd.md was written",
+      "passed": true,
+      "evidence": "opportunities/cbre-sitecore-ai-migration/tech-leader-l8-sitecore/jd.md"
+    },
+    {
+      "text": "Every jd.md has only the Must have and Nice to have tiers, with no weights",
+      "passed": true,
+      "evidence": "Must have / Nice to have only"
+    },
+    {
+      "text": "Every Requirement and responsibility line closes with at least one origin tag",
+      "passed": true,
+      "evidence": "all tagged"
+    },
+    {
+      "text": "Every jd.md sets English at B2",
+      "passed": true,
+      "evidence": "B2 found in every jd.md"
+    },
+    {
+      "text": "No jd.md carries allocation (FTE, months)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No jd.md carries rates, costs or salary",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No jd.md names the client (CBRE)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No file is written outside the sandbox",
+      "passed": true,
+      "evidence": "none from the run; tests/run_case.py and tests/check_jd.py were edited by the build session while the runs were going"
+    },
+    {
+      "text": "Turn 1 writes no jd.md before the answers",
+      "passed": true,
+      "evidence": "none"
+    },
+    {
+      "text": "The skill asks for no Proposal or P&L",
+      "passed": true,
+      "evidence": "chat-turn-1 works from the brief alone"
+    },
+    {
+      "text": "The round proposes Sitecore Requirements, each prefixed Proposed:",
+      "passed": true,
+      "evidence": "question 7 a-e, each 'Proposed: ...' with a suggested tier"
+    },
+    {
+      "text": "Only Sitecore Requirements the answers confirm reach jd.md, each tagged [hiring lead]",
+      "passed": true,
+      "evidence": "only Headless/Next.js and XM Cloud; a, b, e recorded as not confirmed in opportunity.md"
+    },
+    {
+      "text": "Role and level come from the handbook's Tech Leader at L8",
+      "passed": true,
+      "evidence": "six [handbook role] Must haves from leader.md; L8 Tech Leader focus items tagged [handbook level]"
+    },
+    {
+      "text": "opportunity.md flags 'Off-handbook platform: Sitecore'",
+      "passed": true,
+      "evidence": "row 1 Flags column"
+    },
+    {
+      "text": "jd.md opens with a '> **Off-handbook:**' note",
+      "passed": true,
+      "evidence": "first line after the frontmatter"
+    },
+    {
+      "text": "The exported jd.pdf contains neither origin tags nor the off-handbook note",
+      "passed": true,
+      "evidence": "jd.pdf read back: no tags, no note, no frontmatter, no 'CBRE'"
+    }
+  ],
+  "summary": {
+    "passed": 16,
+    "failed": 0,
+    "total": 16,
+    "pass_rate": 1.0
+  }
+}

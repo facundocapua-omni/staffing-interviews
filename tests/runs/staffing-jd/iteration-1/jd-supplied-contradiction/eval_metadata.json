@@ -1,0 +1,10 @@
+{
+  "eval_id": 4,
+  "eval_name": "jd-supplied-contradiction",
+  "prompt": "Quiero abrir la búsqueda de un DXP Technology Director para nuestra propia unidad DXP. Te paso la descripción de cargo que tengo: inbox/DXP TECHNOLOGY DIRECTOR - JOB DESCRIPTION (2).docx. Armame el JD.",
+  "assertions": [
+    "The round shows the contradiction between the supplied document's 8 years and the 13 years of level-equivalence.md",
+    "With that question unanswered, jd.md carries no years Requirement and opportunity.md records it as open",
+    "No file is written outside the sandbox"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "eval_id": 2,
+  "eval_name": "jd-internal-client",
+  "prompt": "Quiero abrir la búsqueda de un DXP Technology Director para nuestra propia unidad DXP. Te paso la descripción de cargo que tengo: inbox/DXP TECHNOLOGY DIRECTOR - JOB DESCRIPTION (2).docx. Armame el JD.",
+  "assertions": [
+    "The skill asks for no Proposal or P&L",
+    "The round asks for the Position's level",
+    "The round asks who supplied the job description",
+    "The jd.md is in English although the source is Spanish",
+    "Requirements taken from the supplied document carry `[supplied JD]`",
+    "Requirements the supplied document does not cover come from the handbook's director role, tagged `[handbook role]`",
+    "KPIs, reporting line and authority from the HR document stay out of the jd.md",
+    "Every Requirement closes with at least one origin tag, and only two tiers appear",
+    "No file is written outside the sandbox"
+  ]
+}

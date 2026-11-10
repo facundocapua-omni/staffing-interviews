@@ -1,0 +1,42 @@
+{
+  "turns": [
+    {
+      "turn": 1,
+      "duration_ms": 80697,
+      "cost_usd": 0.7331989999999999,
+      "num_turns": 23,
+      "is_error": false,
+      "output_tokens": 8127,
+      "permission_denials": [
+        {
+          "tool_name": "Bash",
+          "tool_use_id": "toolu_01G9m56NQmjGpUobGqpggZiZ",
+          "tool_input": {
+            "command": "cd /Users/facundocapua/Workspace/leadership/staffing/tests/runs/staffing-jd/iteration-2/jd-internal-client/sandbox; ls -la; ls -d opportunities people; ls inbox; cat /Users/facundocapua/Workspace/leadership/staffing/.claude/shared/conventions.md /Users/facundocapua/Workspace/leadership/staffing/.claude/shared/disk-layout.md; ls /Users/facundocapua/Workspace/leadership/staffing/.claude/shared/ /Users/facundocapua/Workspace/leadership/staffing/.claude/shared/hr-job-descriptions",
+            "description": "Inspect sandbox and read shared conventions"
+          }
+        },
+        {
+          "tool_name": "Bash",
+          "tool_use_id": "toolu_01Cm6eHbTN6jGYQgyNYknApq",
+          "tool_input": {
+            "command": "head -60 /Users/facundocapua/Workspace/leadership/staffing/GLOSSARY.md",
+            "description": "Read the start of the domain glossary"
+          }
+        }
+      ],
+      "writes_outside_sandbox": []
+    },
+    {
+      "turn": 2,
+      "duration_ms": 113510,
+      "cost_usd": 1.1951547999999999,
+      "num_turns": 6,
+      "is_error": false,
+      "output_tokens": 12672,
+      "permission_denials": [],
+      "writes_outside_sandbox": []
+    }
+  ],
+  "total_duration_seconds": 194.2
+}

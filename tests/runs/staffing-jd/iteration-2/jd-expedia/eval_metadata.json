@@ -1,0 +1,21 @@
+{
+  "eval_id": 1,
+  "eval_name": "jd-expedia",
+  "prompt": "Nueva Oportunidad: Expedia, la migración de AEM a Contentful. La Propuesta y el P&L están en inbox/. Armame los JDs.",
+  "assertions": [
+    "Turn 1 shows an intake analysis and a numbered question round, and writes no jd.md before the answers",
+    "The round asks whether line 4 (AEM Backend Developer, Sr 3) leads people",
+    "P&L lines 1-3 (Tech Project Manager, Tech Director, Client Engagement Director) get no JD",
+    "Seniority comes from the Labor Estimate, and the SOW seniority gap is a flag in opportunity.md, not in any jd.md",
+    "Lines 10 (Martech Content Specialist), 11 (Cultural Hacking Lead) and the API workstream are flagged and get no invented Requirements",
+    "Every jd.md has only the Must have and Nice to have tiers, with no weights",
+    "Every Requirement in every jd.md closes with at least one origin tag from the origins list",
+    "Every jd.md sets English at B2 (B1 only as a granted exception)",
+    "No jd.md carries allocation (FTE, months), rates, costs or salary",
+    "No jd.md names the client (Expedia, Vrbo, EGDS, expediagroup.com and the like)",
+    "Every deliverable is in English, and no file is written outside the sandbox",
+    "Every jd.md keeps Must have to a short filter (12 lines or fewer)",
+    "Every jd.md has a Logistics section, with 'To be confirmed' for what is still open",
+    "opportunity.md names no person (the already-assigned line reads 'already assigned to a named person')"
+  ]
+}

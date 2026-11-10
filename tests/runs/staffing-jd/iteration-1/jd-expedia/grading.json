@@ -1,0 +1,75 @@
+{
+  "expectations": [
+    {
+      "text": "At least one jd.md was written",
+      "passed": true,
+      "evidence": "opportunities/expedia-contentful-migration/backend-developer-l5-contentful/jd.md, opportunities/expedia-contentful-migration/devops-engineer-l6-contentful/jd.md, opportunities/expedia-contentful-migration/frontend-developer-l5-contentful/jd.md, opportunities/expedia-contentful-migration/frontend-developer-l6-contentful/jd.md, opportunities/expedia-contentful-migration/qa-engineer-l6-contentful/jd.md, opportunities/expedia-contentful-migration/tech-leader-l8-contentful/jd.md"
+    },
+    {
+      "text": "Every jd.md has only the Must have and Nice to have tiers, with no weights",
+      "passed": true,
+      "evidence": "Must have / Nice to have only"
+    },
+    {
+      "text": "Every Requirement and responsibility line closes with at least one origin tag",
+      "passed": true,
+      "evidence": "all tagged"
+    },
+    {
+      "text": "Every jd.md sets English at B2",
+      "passed": true,
+      "evidence": "B2 found in every jd.md"
+    },
+    {
+      "text": "No jd.md carries allocation (FTE, months)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No jd.md carries rates, costs or salary",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No jd.md names the client (Expedia, Vrbo, EGDS, expediagroup, escapia, Ramirez)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No file is written outside the sandbox",
+      "passed": true,
+      "evidence": "none from the run; tests/run_case.py and tests/check_jd.py were edited by the build session while the runs were going"
+    },
+    {
+      "text": "Turn 1 writes no jd.md before the answers",
+      "passed": true,
+      "evidence": "none"
+    },
+    {
+      "text": "The round asks whether line 4 (AEM Backend Developer, Sr 3) leads people",
+      "passed": true,
+      "evidence": "chat-turn-1, question 1: '¿Lidera personas?', with the Tech Lead I/II and Experience Senior I/II follow-ups"
+    },
+    {
+      "text": "P&L lines 1-3 get no JD",
+      "passed": true,
+      "evidence": "opportunity.md rows 1-3: 'no: already assigned (Anthony Ramirez)', 'no: governance line', 'no: structure line'"
+    },
+    {
+      "text": "Seniority comes from the Labor Estimate; the SOW gap is a flag in opportunity.md, not in any jd.md",
+      "passed": true,
+      "evidence": "opportunity.md Flags column 'SOW says ...' on rows 4-7 and inconsistency 1; no jd.md mentions the SOW"
+    },
+    {
+      "text": "Lines 10, 11 (Martech) and the API workstream are flagged and get no invented Requirements",
+      "passed": true,
+      "evidence": "rows 10-11 'Off-handbook role: Martech Content Specialist', no JD; API workstream is inconsistency 2, folded into the backend JDs per answer 6; Martech proposals stayed in the round"
+    }
+  ],
+  "summary": {
+    "passed": 13,
+    "failed": 0,
+    "total": 13,
+    "pass_rate": 1.0
+  }
+}

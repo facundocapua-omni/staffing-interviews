@@ -1,0 +1,60 @@
+{
+  "expectations": [
+    {
+      "text": "At least one jd.md was written",
+      "passed": true,
+      "evidence": "opportunities/omnipro-dxp-technology-director/tech-director-dxp/jd.md"
+    },
+    {
+      "text": "Every jd.md has only the Must have and Nice to have tiers, with no weights",
+      "passed": true,
+      "evidence": "Must have / Nice to have only"
+    },
+    {
+      "text": "Every Requirement and responsibility line closes with at least one origin tag",
+      "passed": true,
+      "evidence": "all tagged"
+    },
+    {
+      "text": "Every jd.md sets English at B2",
+      "passed": true,
+      "evidence": "B2 found in every jd.md"
+    },
+    {
+      "text": "No jd.md carries allocation (FTE, months)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No jd.md carries rates, costs or salary",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No file is written outside the sandbox",
+      "passed": true,
+      "evidence": "none from the run; tests/run_case.py and tests/check_jd.py were edited by the build session while the runs were going"
+    },
+    {
+      "text": "Turn 1 writes no jd.md before the answers",
+      "passed": true,
+      "evidence": "none"
+    },
+    {
+      "text": "The round shows the supplied document's 8 years against the 13 of level-equivalence.md",
+      "passed": true,
+      "evidence": "chat-turn-1, question 1: 'Tu documento pide 8 años. La base pide 13 años'"
+    },
+    {
+      "text": "With it unanswered, jd.md carries no years Requirement and opportunity.md records it as open",
+      "passed": true,
+      "evidence": "no 'year' in jd.md; opportunity.md intake answer 1 '**Open:** ... written nowhere until answered'"
+    }
+  ],
+  "summary": {
+    "passed": 10,
+    "failed": 0,
+    "total": 10,
+    "pass_rate": 1.0
+  }
+}

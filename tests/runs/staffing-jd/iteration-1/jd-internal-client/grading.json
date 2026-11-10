@@ -1,0 +1,85 @@
+{
+  "expectations": [
+    {
+      "text": "At least one jd.md was written",
+      "passed": true,
+      "evidence": "opportunities/omnipro-dxp-unit/tech-director-dxp/jd.md"
+    },
+    {
+      "text": "Every jd.md has only the Must have and Nice to have tiers, with no weights",
+      "passed": true,
+      "evidence": "Must have / Nice to have only"
+    },
+    {
+      "text": "Every Requirement and responsibility line closes with at least one origin tag",
+      "passed": true,
+      "evidence": "all tagged"
+    },
+    {
+      "text": "Every jd.md sets English at B2",
+      "passed": true,
+      "evidence": "B2 found in every jd.md"
+    },
+    {
+      "text": "No jd.md carries allocation (FTE, months)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No jd.md carries rates, costs or salary",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No file is written outside the sandbox",
+      "passed": true,
+      "evidence": "none from the run; tests/run_case.py and tests/check_jd.py were edited by the build session while the runs were going"
+    },
+    {
+      "text": "Turn 1 writes no jd.md before the answers",
+      "passed": true,
+      "evidence": "none"
+    },
+    {
+      "text": "The skill asks for no Proposal or P&L",
+      "passed": true,
+      "evidence": "chat-turn-1 works from the supplied document alone"
+    },
+    {
+      "text": "The round asks for the Position's level",
+      "passed": true,
+      "evidence": "question 3: role (Tech Director or Global Tech Director) and 'el nivel es Director, con 13 años: ¿lo confirmás?'"
+    },
+    {
+      "text": "The round asks who supplied the job description",
+      "passed": false,
+      "evidence": "not asked: the analysis says 'La tomo como JD provisto por vos' (the contradiction case, same input, did ask)"
+    },
+    {
+      "text": "The jd.md is in English although the source is Spanish",
+      "passed": true,
+      "evidence": "tech-director-dxp/jd.md is in English"
+    },
+    {
+      "text": "Requirements from the supplied document carry [supplied JD]",
+      "passed": true,
+      "evidence": "e.g. degree, complementary studies, microservices, the technical groups"
+    },
+    {
+      "text": "Requirements it does not cover come from the Tech Director role (regional-director), tagged [handbook role]",
+      "passed": true,
+      "evidence": "org design, coaching senior managers, line-managing Tech Managers and the Expert"
+    },
+    {
+      "text": "KPIs, reporting line and authority from the HR document stay out",
+      "passed": true,
+      "evidence": "no INDICADORES, reporting line or AUTORIDAD items. But an Adobe Commerce-specific responsibility the hiring lead excluded slipped in: 'oversee key integrations such as payment and shipping against PCI'"
+    }
+  ],
+  "summary": {
+    "passed": 14,
+    "failed": 1,
+    "total": 15,
+    "pass_rate": 0.93
+  }
+}

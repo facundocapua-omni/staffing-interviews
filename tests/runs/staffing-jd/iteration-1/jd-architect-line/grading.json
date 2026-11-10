@@ -1,0 +1,80 @@
+{
+  "expectations": [
+    {
+      "text": "At least one jd.md was written",
+      "passed": true,
+      "evidence": "opportunities/expedia-contentful-migration/backend-developer-l5-contentful/jd.md, opportunities/expedia-contentful-migration/devops-engineer-l6-contentful/jd.md, opportunities/expedia-contentful-migration/expert-l8-contentful/jd.md, opportunities/expedia-contentful-migration/frontend-developer-l5-contentful/jd.md, opportunities/expedia-contentful-migration/frontend-developer-l6-contentful/jd.md, opportunities/expedia-contentful-migration/qa-engineer-l6-contentful/jd.md"
+    },
+    {
+      "text": "Every jd.md has only the Must have and Nice to have tiers, with no weights",
+      "passed": true,
+      "evidence": "Must have / Nice to have only"
+    },
+    {
+      "text": "Every Requirement and responsibility line closes with at least one origin tag",
+      "passed": true,
+      "evidence": "all tagged"
+    },
+    {
+      "text": "Every jd.md sets English at B2",
+      "passed": true,
+      "evidence": "B2 found in every jd.md"
+    },
+    {
+      "text": "No jd.md carries allocation (FTE, months)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No jd.md carries rates, costs or salary",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No jd.md names the client (Expedia, Vrbo, EGDS, expediagroup, escapia, Ramirez)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No file is written outside the sandbox",
+      "passed": true,
+      "evidence": "none from the run; tests/run_case.py and tests/check_jd.py were edited by the build session while the runs were going"
+    },
+    {
+      "text": "Turn 1 writes no jd.md before the answers",
+      "passed": true,
+      "evidence": "none"
+    },
+    {
+      "text": "The round asks whether line 4 is an Expert or a Tech Leader",
+      "passed": true,
+      "evidence": "chat-turn-1, question 2: '¿es una Posición de Expert o de Tech Leader?'"
+    },
+    {
+      "text": "Line 4's Must haves come from the handbook's expert role, tagged [handbook role]",
+      "passed": true,
+      "evidence": "expert-l8-contentful/jd.md: architecture and full-stack expertise, solution design, standards definition, influence without authority, consultative communication"
+    },
+    {
+      "text": "Line 4 asks for 11 years and lists responsibilities tagged [HR job description]",
+      "passed": true,
+      "evidence": "'11+ years ... [HR job description]'; 9 of 11 lines of 'What the person will do' carry [HR job description]"
+    },
+    {
+      "text": "HR's Software Architect stack list (Java, Python, Node.js, .NET) stays out",
+      "passed": true,
+      "evidence": "no match for java|python|node.js|.net in expert-l8-contentful/jd.md"
+    },
+    {
+      "text": "opportunity.md flags line 4 'Expert is a regional role in the handbook; project scope from the Propuesta'",
+      "passed": true,
+      "evidence": "row 4 Flags column carries the exact text"
+    }
+  ],
+  "summary": {
+    "passed": 14,
+    "failed": 0,
+    "total": 14,
+    "pass_rate": 1.0
+  }
+}

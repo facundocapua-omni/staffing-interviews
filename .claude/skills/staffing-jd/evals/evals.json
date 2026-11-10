@@ -1,0 +1,136 @@
+{
+  "skill_name": "staffing-jd",
+  "runner": "tests/run_case.py",
+  "acceptance_root": "tests/acceptance",
+  "evals": [
+    {
+      "id": 1,
+      "handle": "jd-expedia",
+      "prompt": "Nueva Oportunidad: Expedia, la migración de AEM a Contentful. La Propuesta y el P&L están en inbox/. Armame los JDs.",
+      "files": [
+        "jd-expedia/inputs/[Globant - Expedia_TPA] SF Contentful Migration - October 2026 (1).pptx",
+        "jd-expedia/inputs/[TPA Expedia] Contentful Migration Proposal - Pricing Sheet V4 _AI PODs_.xlsx"
+      ],
+      "replies": [
+        "jd-expedia/answers/intake-round-1.md"
+      ],
+      "expected_output": "An intake analysis and one question round before any JD is written; then opportunity.md and one jd.md per DXP technical line (4-9), anonymised, with origins on every Requirement.",
+      "expectations": [
+        "Turn 1 shows an intake analysis and a numbered question round, and writes no jd.md before the answers",
+        "The round asks whether line 4 (AEM Backend Developer, Sr 3) leads people",
+        "P&L lines 1-3 (Tech Project Manager, Tech Director, Client Engagement Director) get no JD",
+        "Seniority comes from the Labor Estimate, and the SOW seniority gap is a flag in opportunity.md, not in any jd.md",
+        "Lines 10 (Martech Content Specialist), 11 (Cultural Hacking Lead) and the API workstream are flagged and get no invented Requirements",
+        "Every jd.md has only the Must have and Nice to have tiers, with no weights",
+        "Every Requirement in every jd.md closes with at least one origin tag from the origins list",
+        "Every jd.md sets English at B2 (B1 only as a granted exception)",
+        "No jd.md carries allocation (FTE, months), rates, costs or salary",
+        "No jd.md names the client (Expedia, Vrbo, EGDS, expediagroup.com and the like)",
+        "Every deliverable is in English, and no file is written outside the sandbox",
+        "Every jd.md keeps Must have to a short filter (12 lines or fewer)",
+        "Every jd.md has a Logistics section, with 'To be confirmed' for what is still open",
+        "opportunity.md names no person (the already-assigned line reads 'already assigned to a named person')"
+      ]
+    },
+    {
+      "id": 2,
+      "handle": "jd-internal-client",
+      "prompt": "Quiero abrir la búsqueda de un DXP Technology Director para nuestra propia unidad DXP. Te paso la descripción de cargo que tengo: inbox/DXP TECHNOLOGY DIRECTOR - JOB DESCRIPTION (2).docx. Armame el JD.",
+      "files": [
+        "jd-internal-client/inputs/DXP TECHNOLOGY DIRECTOR - JOB DESCRIPTION (2).docx"
+      ],
+      "replies": [
+        "jd-internal-client/answers/intake-answers.md"
+      ],
+      "expected_output": "No request for a Proposal or P&L; the level asked in the round; an English jd.md from the Spanish source whose Requirements carry supplied JD, filled in by the handbook's Tech Director role (regional-director).",
+      "expectations": [
+        "The skill asks for no Proposal or P&L",
+        "The round asks for the Position's level",
+        "The round asks who supplied the job description",
+        "The jd.md is in English although the source is Spanish",
+        "Requirements taken from the supplied document carry `[supplied JD]`",
+        "Requirements the supplied document does not cover come from the handbook's Tech Director role (`regional-director`, the hiring lead's answer), tagged `[handbook role]`",
+        "KPIs, reporting line and authority from the HR document stay out of the jd.md",
+        "Every Requirement closes with at least one origin tag, and only two tiers appear",
+        "No file is written outside the sandbox",
+        "Every jd.md keeps Must have to a short filter (12 lines or fewer)",
+        "Every jd.md has a Logistics section, with 'To be confirmed' for what is still open",
+        "The round asks whether the Position needs each DXP platform or at least one of them",
+        "No Adobe Commerce-specific item the hiring lead excluded (payments, PCI, core commerce flows) appears anywhere in jd.md",
+        "Platform Requirements are pitched at the Director role (leading delivery or architecture), not a platform's stack layer by layer"
+      ]
+    },
+    {
+      "id": 3,
+      "handle": "jd-off-handbook",
+      "prompt": "Necesito un Tech Leader para un proyecto Sitecore que ya está en curso. El brief está en inbox/brief.md. Armame el JD.",
+      "files": [
+        "jd-off-handbook/inputs/brief.md"
+      ],
+      "replies": [
+        "jd-off-handbook/answers/intake-answers.md"
+      ],
+      "export_turn": "Sí, exportá el JD a PDF.",
+      "expected_output": "Proposed Sitecore Requirements in the round; only confirmed ones written, tagged hiring lead; role and level from the handbook (Leader, L8); the off-handbook flag in opportunity.md and the note in jd.md, neither in the PDF.",
+      "expectations": [
+        "The skill asks for no Proposal or P&L",
+        "The round proposes Sitecore platform Requirements, each prefixed `Proposed:`",
+        "Only Sitecore Requirements the answers confirm reach jd.md, each tagged `[hiring lead]`",
+        "Role and level Requirements come from the handbook's Tech Leader at L8, tagged `[handbook role]` / `[handbook level]`",
+        "opportunity.md flags the Position `Off-handbook platform: Sitecore`",
+        "jd.md opens with a `> **Off-handbook:**` note",
+        "The exported jd.pdf contains neither origin tags nor the off-handbook note",
+        "No file is written outside the sandbox",
+        "Every jd.md keeps Must have to a short filter (12 lines or fewer)",
+        "Every jd.md has a Logistics section, with 'To be confirmed' for what is still open"
+      ]
+    },
+    {
+      "id": 4,
+      "handle": "jd-supplied-contradiction",
+      "base": "jd-internal-client",
+      "mutation": "docx_years_8",
+      "prompt": "Quiero abrir la búsqueda de un DXP Technology Director para nuestra propia unidad DXP. Te paso la descripción de cargo que tengo: inbox/DXP TECHNOLOGY DIRECTOR - JOB DESCRIPTION (2).docx. Armame el JD.",
+      "files": [
+        "jd-internal-client/inputs/DXP TECHNOLOGY DIRECTOR - JOB DESCRIPTION (2).docx"
+      ],
+      "replies": [
+        "jd-supplied-contradiction/answers/intake-answers.md"
+      ],
+      "expected_output": "The round shows the supplied document's 8 years against the level table's 13; no years Requirement is written until the hiring lead answers.",
+      "expectations": [
+        "The round shows the contradiction between the supplied document's 8 years and the 13 years of level-equivalence.md",
+        "With that question unanswered, jd.md carries no years Requirement and opportunity.md records it as open",
+        "No file is written outside the sandbox",
+        "Every jd.md keeps Must have to a short filter (12 lines or fewer)",
+        "Every jd.md has a Logistics section, with 'To be confirmed' for what is still open"
+      ]
+    },
+    {
+      "id": 5,
+      "handle": "jd-architect-line",
+      "base": "jd-expedia",
+      "mutation": "xlsx_line4_architect",
+      "prompt": "Nueva Oportunidad: Expedia, la migración de AEM a Contentful. La Propuesta y el P&L están en inbox/. Armame los JDs.",
+      "files": [
+        "jd-expedia/inputs/[Globant - Expedia_TPA] SF Contentful Migration - October 2026 (1).pptx",
+        "jd-expedia/inputs/[TPA Expedia] Contentful Migration Proposal - Pricing Sheet V4 _AI PODs_.xlsx"
+      ],
+      "replies": [
+        "jd-architect-line/answers/intake-answers.md"
+      ],
+      "expected_output": "The round asks whether line 4 is an Expert or a Tech Leader; answered Expert, its JD takes the Must haves from expert, the 11 years and responsibilities from HR's Software Architect, and the regional-role flag.",
+      "expectations": [
+        "The round asks whether line 4 is an Expert or a Tech Leader",
+        "Line 4's jd.md takes its Must haves from the handbook's expert role, tagged `[handbook role]`",
+        "Line 4's jd.md asks for 11 years and lists responsibilities tagged `[HR job description]`",
+        "HR's Software Architect stack list (Java, Python, Node.js, .NET) stays out of line 4's jd.md",
+        "opportunity.md flags line 4 `Expert is a regional role in the handbook; project scope from the Propuesta`",
+        "No file is written outside the sandbox",
+        "Every jd.md keeps Must have to a short filter (12 lines or fewer)",
+        "Every jd.md has a Logistics section, with 'To be confirmed' for what is still open",
+        "opportunity.md names no person (the already-assigned line reads 'already assigned to a named person')"
+      ]
+    }
+  ]
+}

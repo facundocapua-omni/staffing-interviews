@@ -1,0 +1,5 @@
+inbox/brief.md
+opportunities/cbre-sitecore-ai-migration/brief.md
+opportunities/cbre-sitecore-ai-migration/opportunity.md
+opportunities/cbre-sitecore-ai-migration/tech-leader-l8-sitecore/jd.md
+opportunities/cbre-sitecore-ai-migration/tech-leader-l8-sitecore/jd.pdf

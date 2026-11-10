@@ -1,0 +1,21 @@
+{
+  "eval_id": 2,
+  "eval_name": "jd-internal-client",
+  "prompt": "Quiero abrir la búsqueda de un DXP Technology Director para nuestra propia unidad DXP. Te paso la descripción de cargo que tengo: inbox/DXP TECHNOLOGY DIRECTOR - JOB DESCRIPTION (2).docx. Armame el JD.",
+  "assertions": [
+    "The skill asks for no Proposal or P&L",
+    "The round asks for the Position's level",
+    "The round asks who supplied the job description",
+    "The jd.md is in English although the source is Spanish",
+    "Requirements taken from the supplied document carry `[supplied JD]`",
+    "Requirements the supplied document does not cover come from the handbook's Tech Director role (`regional-director`, the hiring lead's answer), tagged `[handbook role]`",
+    "KPIs, reporting line and authority from the HR document stay out of the jd.md",
+    "Every Requirement closes with at least one origin tag, and only two tiers appear",
+    "No file is written outside the sandbox",
+    "Every jd.md keeps Must have to a short filter (12 lines or fewer)",
+    "Every jd.md has a Logistics section, with 'To be confirmed' for what is still open",
+    "The round asks whether the Position needs each DXP platform or at least one of them",
+    "No Adobe Commerce-specific item the hiring lead excluded (payments, PCI, core commerce flows) appears anywhere in jd.md",
+    "Platform Requirements are pitched at the Director role (leading delivery or architecture), not a platform's stack layer by layer"
+  ]
+}

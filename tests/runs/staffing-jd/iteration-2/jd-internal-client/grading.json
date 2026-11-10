@@ -1,0 +1,110 @@
+{
+  "expectations": [
+    {
+      "text": "At least one jd.md was written",
+      "passed": true,
+      "evidence": "opportunities/omnipro-dxp-technology-director/tech-director-dxp/jd.md"
+    },
+    {
+      "text": "Every jd.md has only the Must have and Nice to have tiers, with no weights",
+      "passed": true,
+      "evidence": "Must have / Nice to have only"
+    },
+    {
+      "text": "Every Requirement and responsibility line closes with at least one origin tag",
+      "passed": true,
+      "evidence": "all tagged"
+    },
+    {
+      "text": "Every jd.md sets English at B2",
+      "passed": true,
+      "evidence": "B2 found in every jd.md"
+    },
+    {
+      "text": "Every jd.md keeps Must have to a short filter (12 lines or fewer)",
+      "passed": false,
+      "evidence": "omnipro-dxp-technology-director/tech-director-dxp/jd.md: 13 lines"
+    },
+    {
+      "text": "Every jd.md has a Logistics section",
+      "passed": true,
+      "evidence": "all present"
+    },
+    {
+      "text": "No jd.md carries allocation (FTE, months)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No jd.md carries rates, costs or salary",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No file is written outside the sandbox",
+      "passed": true,
+      "evidence": "none"
+    },
+    {
+      "text": "Turn 1 writes no jd.md before the answers",
+      "passed": true,
+      "evidence": "none"
+    },
+    {
+      "text": "The skill asks for no Proposal or P&L",
+      "passed": true,
+      "evidence": "chat-turn-1"
+    },
+    {
+      "text": "The round asks for the Position's level",
+      "passed": true,
+      "evidence": "chat-turn-1, questions 2-3 (role and level)"
+    },
+    {
+      "text": "The round asks who supplied the job description",
+      "passed": true,
+      "evidence": "chat-turn-1, question 3: '¿La aportás vos como hiring lead para esta Posición?'"
+    },
+    {
+      "text": "The round asks whether the Position needs each DXP platform or at least one of them",
+      "passed": true,
+      "evidence": "chat-turn-1, question 4 (b): 'exigiendo cada una o al menos una'"
+    },
+    {
+      "text": "The jd.md is in English although the source is Spanish",
+      "passed": true,
+      "evidence": "tech-director-dxp/jd.md"
+    },
+    {
+      "text": "Requirements from the supplied document carry [supplied JD]",
+      "passed": true,
+      "evidence": "technical groups, degree, soft skills"
+    },
+    {
+      "text": "Requirements it does not cover come from the Tech Director role (regional-director), tagged [handbook role]",
+      "passed": true,
+      "evidence": "unit-scale technical leadership and org design, developing teams"
+    },
+    {
+      "text": "KPIs, reporting line and authority from the HR document stay out",
+      "passed": true,
+      "evidence": "none present"
+    },
+    {
+      "text": "No Adobe Commerce-specific item the hiring lead excluded (payments, PCI, core commerce flows) appears anywhere in jd.md",
+      "passed": true,
+      "evidence": "no payment, PCI or commerce-flow item"
+    },
+    {
+      "text": "Platform Requirements are pitched at the Director role (leading delivery or architecture), not a platform's stack layer by layer",
+      "passed": true,
+      "evidence": "one Must have: 'Has led delivery or architecture on at least one of the unit's platforms'; Not a fit if mirrors it"
+    }
+  ],
+  "summary": {
+    "passed": 19,
+    "failed": 1,
+    "total": 20,
+    "pass_rate": 0.95
+  }
+}

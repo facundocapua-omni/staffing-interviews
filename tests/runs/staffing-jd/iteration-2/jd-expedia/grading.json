@@ -1,0 +1,95 @@
+{
+  "expectations": [
+    {
+      "text": "At least one jd.md was written",
+      "passed": true,
+      "evidence": "opportunities/expedia-contentful-migration/backend-developer-l5-contentful/jd.md, opportunities/expedia-contentful-migration/devops-engineer-l6-contentful/jd.md, opportunities/expedia-contentful-migration/frontend-developer-l5-contentful/jd.md, opportunities/expedia-contentful-migration/frontend-developer-l6-contentful/jd.md, opportunities/expedia-contentful-migration/qa-engineer-l6-contentful/jd.md, opportunities/expedia-contentful-migration/tech-leader-l8-contentful/jd.md"
+    },
+    {
+      "text": "Every jd.md has only the Must have and Nice to have tiers, with no weights",
+      "passed": true,
+      "evidence": "Must have / Nice to have only"
+    },
+    {
+      "text": "Every Requirement and responsibility line closes with at least one origin tag",
+      "passed": true,
+      "evidence": "all tagged"
+    },
+    {
+      "text": "Every jd.md sets English at B2",
+      "passed": true,
+      "evidence": "B2 found in every jd.md"
+    },
+    {
+      "text": "Every jd.md keeps Must have to a short filter (12 lines or fewer)",
+      "passed": true,
+      "evidence": "all within 12"
+    },
+    {
+      "text": "Every jd.md has a Logistics section",
+      "passed": true,
+      "evidence": "all present"
+    },
+    {
+      "text": "No jd.md carries allocation (FTE, months)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No jd.md carries rates, costs or salary",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No jd.md names the client (Expedia, Vrbo, EGDS, expediagroup, escapia, Ramirez)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "opportunity.md names no person (Ramirez)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No file is written outside the sandbox",
+      "passed": true,
+      "evidence": "none"
+    },
+    {
+      "text": "Turn 1 writes no jd.md before the answers",
+      "passed": true,
+      "evidence": "none"
+    },
+    {
+      "text": "The round asks whether line 4 (AEM Backend Developer, Sr 3) leads people",
+      "passed": true,
+      "evidence": "chat-turn-1, question 3"
+    },
+    {
+      "text": "P&L lines 1-3 get no JD",
+      "passed": true,
+      "evidence": "rows 1-3; row 1 reads 'no: already assigned to a named person'"
+    },
+    {
+      "text": "Seniority comes from the Labor Estimate; the SOW gap is a flag in opportunity.md, not in any jd.md",
+      "passed": true,
+      "evidence": "Flags column 'SOW lists it as ...'; no jd.md mentions the SOW"
+    },
+    {
+      "text": "Lines 10, 11 (Martech) and the API workstream are flagged and get no invented Requirements",
+      "passed": true,
+      "evidence": "Martech rows flagged off-handbook, no JD; API folded per answer 6; the SFMC tier, asked and unanswered, is open and written nowhere"
+    },
+    {
+      "text": "Every jd.md has a Logistics section, with 'To be confirmed' for what is still open",
+      "passed": false,
+      "evidence": "the round asked whether the P&L starts hold (question 5) and the reply did not say; opportunity.md records 'Starts follow the Labor Estimate' inside answer 11, an answer the hiring lead never gave, and the JDs carry Labor Estimate starts"
+    }
+  ],
+  "summary": {
+    "passed": 16,
+    "failed": 1,
+    "total": 17,
+    "pass_rate": 0.94
+  }
+}

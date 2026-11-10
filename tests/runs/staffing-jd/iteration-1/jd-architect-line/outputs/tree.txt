@@ -1,0 +1,11 @@
+inbox/[Globant - Expedia_TPA] SF Contentful Migration - October 2026 (1).pptx
+inbox/[TPA Expedia] Contentful Migration Proposal - Pricing Sheet V4 _AI PODs_.xlsx
+opportunities/expedia-contentful-migration/[Globant - Expedia_TPA] SF Contentful Migration - October 2026 (1).pptx
+opportunities/expedia-contentful-migration/[TPA Expedia] Contentful Migration Proposal - Pricing Sheet V4 _AI PODs_.xlsx
+opportunities/expedia-contentful-migration/backend-developer-l5-contentful/jd.md
+opportunities/expedia-contentful-migration/devops-engineer-l6-contentful/jd.md
+opportunities/expedia-contentful-migration/expert-l8-contentful/jd.md
+opportunities/expedia-contentful-migration/frontend-developer-l5-contentful/jd.md
+opportunities/expedia-contentful-migration/frontend-developer-l6-contentful/jd.md
+opportunities/expedia-contentful-migration/opportunity.md
+opportunities/expedia-contentful-migration/qa-engineer-l6-contentful/jd.md

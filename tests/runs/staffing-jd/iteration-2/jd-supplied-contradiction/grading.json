@@ -1,0 +1,70 @@
+{
+  "expectations": [
+    {
+      "text": "At least one jd.md was written",
+      "passed": true,
+      "evidence": "opportunities/omnipro-dxp-technology-director/tech-director-dxp/jd.md"
+    },
+    {
+      "text": "Every jd.md has only the Must have and Nice to have tiers, with no weights",
+      "passed": true,
+      "evidence": "Must have / Nice to have only"
+    },
+    {
+      "text": "Every Requirement and responsibility line closes with at least one origin tag",
+      "passed": true,
+      "evidence": "all tagged"
+    },
+    {
+      "text": "Every jd.md sets English at B2",
+      "passed": true,
+      "evidence": "B2 found in every jd.md"
+    },
+    {
+      "text": "Every jd.md keeps Must have to a short filter (12 lines or fewer)",
+      "passed": false,
+      "evidence": "omnipro-dxp-technology-director/tech-director-dxp/jd.md: 13 lines"
+    },
+    {
+      "text": "Every jd.md has a Logistics section",
+      "passed": true,
+      "evidence": "all present"
+    },
+    {
+      "text": "No jd.md carries allocation (FTE, months)",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No jd.md carries rates, costs or salary",
+      "passed": true,
+      "evidence": "none found"
+    },
+    {
+      "text": "No file is written outside the sandbox",
+      "passed": true,
+      "evidence": "none"
+    },
+    {
+      "text": "Turn 1 writes no jd.md before the answers",
+      "passed": true,
+      "evidence": "none"
+    },
+    {
+      "text": "The round shows the supplied document's 8 years against the 13 of level-equivalence.md",
+      "passed": true,
+      "evidence": "chat-turn-1"
+    },
+    {
+      "text": "With it unanswered, jd.md carries no years Requirement and opportunity.md records it as open",
+      "passed": true,
+      "evidence": "no 'year' in jd.md; opportunity.md inconsistency 1 'Open'"
+    }
+  ],
+  "summary": {
+    "passed": 11,
+    "failed": 1,
+    "total": 12,
+    "pass_rate": 0.92
+  }
+}

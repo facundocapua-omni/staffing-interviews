@@ -1,0 +1,10 @@
+{
+  "turn": 2,
+  "duration_ms": 85016,
+  "cost_usd": 0.8847898,
+  "num_turns": 5,
+  "is_error": false,
+  "output_tokens": 8827,
+  "permission_denials": [],
+  "writes_outside_sandbox": []
+}

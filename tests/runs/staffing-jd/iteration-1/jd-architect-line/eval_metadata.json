@@ -1,0 +1,13 @@
+{
+  "eval_id": 5,
+  "eval_name": "jd-architect-line",
+  "prompt": "Nueva Oportunidad: Expedia, la migración de AEM a Contentful. La Propuesta y el P&L están en inbox/. Armame los JDs.",
+  "assertions": [
+    "The round asks whether line 4 is an Expert or a Tech Leader",
+    "Line 4's jd.md takes its Must haves from the handbook's expert role, tagged `[handbook role]`",
+    "Line 4's jd.md asks for 11 years and lists responsibilities tagged `[HR job description]`",
+    "HR's Software Architect stack list (Java, Python, Node.js, .NET) stays out of line 4's jd.md",
+    "opportunity.md flags line 4 `Expert is a regional role in the handbook; project scope from the Propuesta`",
+    "No file is written outside the sandbox"
+  ]
+}
